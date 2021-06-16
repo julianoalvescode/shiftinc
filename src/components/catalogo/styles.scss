@@ -1,0 +1,13 @@
+.container-catalogo {
+  display: grid;
+  justify-content: center;
+  grid-gap: 40px;
+  padding: 40px 0px;
+  transition: 2s;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, 256px);
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
